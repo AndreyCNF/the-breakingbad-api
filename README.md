@@ -1,12 +1,12 @@
-#TheBrakingbadAPI
+# TheBrakingbadAPI
 
 > Consumindo a APi https://breakingbadapi.com com o Angular.
 
-#Disponível Online 
+# Disponível Online 
 
 > Comming soon
 
-#Iniciando 
+# Iniciando 
 
 Realize o clone do repositório e certifique-se que possui o Angular/Cli instalado em sua maquina
 
