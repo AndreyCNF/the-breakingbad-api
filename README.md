@@ -1,3 +1,20 @@
+# TheBrakingbadAPI
+
+> Consumindo a APi https://breakingbadapi.com com o Angular.
+
+# Disponível Online 
+
+> Comming soon
+
+# Iniciando 
+
+Realize o clone do repositório e certifique-se que possui o `Angular/Cli` instalado em sua maquina
+
+>ng serve --open (Abrirá a página automaticamente)
+
+
+
+
 # TheBreakingbadApi
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
