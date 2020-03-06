@@ -1,0 +1,17 @@
+header-logo {
+    background-color: transparent;
+}
+.navbar .navbar-expand-lg .navbar-light {
+    background-color: #093009;
+}
+li .nav-link, button, .navbar-brand {
+    color: white;
+    cursor: pointer;
+}
+li .nav-link:hover, .navbar-brand:hover {
+    color: gray;
+    cursor: pointer;
+}
+button:hover {
+    color: black;
+}
