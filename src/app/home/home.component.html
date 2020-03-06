@@ -1,1 +1,14 @@
 <bd-header></bd-header>
+<div>
+    <h1 class="container"> Personagens </h1>
+    <div class=" container d-flex flex-wrap  justify-content-between">
+        
+        <div *ngFor="let p of personagens " class=" card m-2 shadow-lg">
+            <img [src]="p.img" class="card-img-top" [alt]="p.name">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+    </div>
+
+</div>

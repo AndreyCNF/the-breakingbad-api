@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../model/api.service';
+import { Personagens } from '../model/Personagens';
 
 @Component({
   selector: 'bd-home',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  personagens : Personagens[]; 
+  constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
+    
+    this.apiService.getPersonagens().subscribe(res => {
+      this.personagens = res 
+      console.log(res),
+     err => console.log(err);
+     });
   }
 
 }
