@@ -8,7 +8,7 @@
 
 # Iniciando 
 
-Realize o clone do repositório e certifique-se que possui o Angular/Cli instalado em sua maquina
+Realize o clone do repositório e certifique-se que possui o `Angular/Cli` instalado em sua maquina
 
 >ng serve --open (Abrirá a página automaticamente)
 
