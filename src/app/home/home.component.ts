@@ -24,4 +24,9 @@ export class HomeComponent implements OnInit {
      });
   }
 
+  getDetail(id){
+
+    this.apiService.getPersonagensById(id) 
+    console.log(id);
+  }
 }

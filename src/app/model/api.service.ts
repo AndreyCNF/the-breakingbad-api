@@ -25,13 +25,12 @@ export class ApiService {
   }
 
   getPersonagensById(id: number): Observable<Personagens[]> {
-    const url = `${API_URL}/characters/${id}`
+    const url = `${API_URL}/${id}`
     return this.http.get<Personagens[]>(url).
     pipe(tap(personagensId => console.log(personagensId)),
     catchError(this.handleError<Personagens[]>(`getPersonagensById id=${id}`))
     );
   }
-
       private handleError<T> (operation = 'operation', result?: T) {
         return (error: any) : Observable<T> => {
           console.log(error);
