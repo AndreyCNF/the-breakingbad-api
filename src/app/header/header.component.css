@@ -1,7 +1,7 @@
 header-logo {
     background-color: transparent;
 }
-.navbar .navbar-expand-lg .navbar-light {
+.navbar .navbar-expand-lg .navbar-light  {
     background-color: #093009;
 }
 li .nav-link, button, .navbar-brand {
@@ -14,4 +14,8 @@ li .nav-link:hover, .navbar-brand:hover {
 }
 button:hover {
     color: black;
+}
+.navbar-toggler-icon, .navbar-toggler, .icon-bar {
+    color: white;
+    border-color: white;
 }

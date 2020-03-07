@@ -1,3 +1,11 @@
+/* Mobile First */
+@media (max-width: 576px) { 
+        .card {
+            width: 90%;
+        }
+}
+
+/* End Of Mobile First */
 h1 {
     color: white;
     font-weight: bold;
