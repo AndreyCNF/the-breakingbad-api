@@ -1,7 +1,11 @@
 /* Mobile First */
-@media (max-width: 576px) { 
+@media (max-width: 625px) { 
         .card {
-            width: 90%;
+            width: 80% !important;
+            margin: 0 auto !important;
+        }
+        h1 {
+            text-align: center !important;
         }
 }
 
@@ -15,7 +19,7 @@ h1 {
     color: white;
 }
 .card {
-    width: 15rem;
+    width: 18rem;
 }
 .card-body, .card-text {
     background: #032202;
