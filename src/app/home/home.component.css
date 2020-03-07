@@ -1,3 +1,5 @@
+  
+
 /* Mobile First */
 @media (max-width: 625px) { 
         .card {
@@ -15,14 +17,18 @@ h1 {
     font-weight: bold;
     text-align: left;
 }
+h3 {
+    color: white;
+    font-weight: bold;
+}
 .card-text {
     color: white;
+    padding: .3rem;
 }
 .card {
     width: 18rem;
-}
-.card-body, .card-text {
-    background: #032202;
+    background-color:#093009;
+    border: 3px solid black;
 }
 
 .card-img-top {
@@ -37,7 +43,8 @@ h1 {
   }
 
   .pagination /deep/ .ngx-pagination li {
-    border: 1px solid white;
+    border: 2px solid black;
+    border-radius: 10px;
     
   }
   .pagination /deep/ .ngx-pagination a {
@@ -60,5 +67,6 @@ h1 {
 }
 .pagination /deep/ .ngx-pagination a:hover {
     background-color: #369457;
-    
+    border-radius: 10px;
 }
+
