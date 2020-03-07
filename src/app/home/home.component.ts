@@ -10,6 +10,9 @@ import { Personagens } from '../model/Personagens';
 export class HomeComponent implements OnInit {
 
   personagens : Personagens[]; 
+  pag = 1;
+  pagCounter = 6; 
+  
   constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {

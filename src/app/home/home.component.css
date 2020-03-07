@@ -26,5 +26,39 @@ h1 {
 }
 
 .card-img-top {
-    height: 20rem;
+    height: 18rem;
+}
+/* Paginacao */
+
+.pagination /deep/ .ngx-pagination .current {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+  }
+
+  .pagination /deep/ .ngx-pagination li {
+    border: 1px solid white;
+    
+  }
+  .pagination /deep/ .ngx-pagination a {
+      color: white;
+      
+  }
+  .pagination /deep/ .ngx-pagination span {
+      background-color: transparent;
+  }
+
+
+  .pagination /deep/ .ngx-pagination .current span  {
+    background-color: white;
+}
+
+/* Paginacao Hovers */ 
+
+.pagination /deep/ .ngx-pagination span:hover {
+    background-color: transparent;
+}
+.pagination /deep/ .ngx-pagination a:hover {
+    background-color: #369457;
+    
 }

@@ -3,6 +3,7 @@ import { HeaderComponent } from './header.component';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClient, HttpHandler, HttpClientModule } from '@angular/common/http';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
     declarations: [HeaderComponent],
