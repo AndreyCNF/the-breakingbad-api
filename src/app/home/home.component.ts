@@ -11,6 +11,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class HomeComponent implements OnInit {
 
   @Input() personagens : Personagens[]; 
+  filter: string = ' ';
   pag = 1;
   pagCounter = 6; 
   
@@ -19,8 +20,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     
     this.apiService.getPersonagens().subscribe(res => {
-      this.personagens = res 
-      console.log(res),
+      this.personagens = res,
      err => console.log(err);
      });
 
@@ -32,6 +32,5 @@ export class HomeComponent implements OnInit {
     this.apiService.getPersonagensById(id) 
     this.router.navigate([`/personagens/${id}`])
 
-    console.log(id);
   }
 }

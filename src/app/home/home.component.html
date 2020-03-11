@@ -1,12 +1,16 @@
 <bd-header></bd-header>
 <div>
     <h1 class="container"> Personagens </h1>
-    <div class=" container-lg d-flex flex-wrap  justify-content-between mb-5">
-        <div *ngFor="let p of personagens | paginate: {itemsPerPage: pagCounter, currentPage: pag} "  class="card m-2 shadow-lg" (click)= "getDetail(p.char_id)">
+    <form class="form-inline my-2 my-lg-0 container input-home">
+      <input class="form-control mr-sm-2 input-submit" type="search" placeholder="Procure por um personagem" aria-label="Search" autofocus (keyup)="filter = $event.target.value">
+    </form>
+    
+    <div class=" container-lg d-flex flex-wrap  justify-content-between mb-5 ">
+        <div *ngFor=" let p of personagens | filterByDescription: filter |  paginate: {itemsPerPage: pagCounter, currentPage: pag}"  class="card m-2 shadow-lg" (click)= "getDetail(p.char_id)">
           <h3 class="p-2 text-center card-name"> {{p.name}} </h3>
             <img [src]="p.img" class="card-img-top" [alt]="p.name">
             <div class="card-body">
-              <li class="card-text list-unstyled">{{p.birthday}} </li>
+              <li class="card-text list-unstyled">{{p.birthday}}  </li>
               <li class="card-text list-unstyled"> {{p.occupation}} </li>
             </div>
           </div>
@@ -19,3 +23,4 @@ previousLabel= "Anterior"
 nextLabel= "Próximo"
 ></pagination-controls>
 </div>
+

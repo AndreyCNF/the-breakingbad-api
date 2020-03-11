@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PersonagensDetalhesComponent } from './personagens-detalhes/personagens-detalhes.component';
 import { HttpClient, HttpHandler, HttpClientModule } from '@angular/common/http';
 import {NgxPaginationModule} from 'ngx-pagination';
+import { FilterByDescription } from './home/filter-by-description.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {NgxPaginationModule} from 'ngx-pagination';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    PersonagensDetalhesComponent
+    PersonagensDetalhesComponent,
+    FilterByDescription
   ],
   imports: [
     BrowserModule,

@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClient } from '@angular/common/http';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { FilterByDescription } from './filter-by-description.pipe';
 
 @NgModule({
     declarations: [HomeComponent],

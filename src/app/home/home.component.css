@@ -27,14 +27,22 @@ h3 {
 }
 .card {
     width: 18rem;
-    
     box-sizing: 0px 0px 3px 3px black;
+}
+.card:hover {
+    cursor: pointer;
 }
 .card-body, .card-text, .card-name, .card {
     background-color: black;
 }
 .card-img-top {
     height: 18rem;
+}
+.input-submit {
+    width: 100%;
+}
+.input-home {
+    padding: 2rem;
 }
 /* Paginacao */
 
