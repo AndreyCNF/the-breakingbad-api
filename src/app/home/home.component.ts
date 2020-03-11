@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ApiService } from '../model/api.service';
 import { Personagens } from '../model/Personagens';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'bd-home',
@@ -9,11 +10,11 @@ import { Personagens } from '../model/Personagens';
 })
 export class HomeComponent implements OnInit {
 
-  personagens : Personagens[]; 
+  @Input() personagens : Personagens[]; 
   pag = 1;
   pagCounter = 6; 
   
-  constructor(private apiService: ApiService) { }
+  constructor(private apiService: ApiService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     
@@ -22,11 +23,15 @@ export class HomeComponent implements OnInit {
       console.log(res),
      err => console.log(err);
      });
+
+    
   }
 
   getDetail(id){
 
     this.apiService.getPersonagensById(id) 
+    this.router.navigate([`/personagens/${id}`])
+
     console.log(id);
   }
 }

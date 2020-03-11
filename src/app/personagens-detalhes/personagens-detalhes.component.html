@@ -1,1 +1,37 @@
-<p>personagens-detalhes works!</p>
+<div *ngFor="let item of id">
+<div  class="container d-flex flex-wrap justify-content-around container-detail">
+    <div>
+        <img [src]="item.img" alt="item.name" class="rounded  img-detail" >
+    </div>
+    <table class="table table-detail">
+        <thead><h1>{{item.name}}</h1></thead>
+        <tbody>
+            <tr>
+                <th scope="row">Apelido</th>
+                <td>{{item.nickname}}</td>
+              </tr>
+          <tr>
+            <th scope="row">Data de Aniversário</th>
+            <td>{{item.birthday}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Ocupação</th>
+            <td>{{item.occupation}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Vivo ou Morto? </th>
+            <td>{{item.status}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Apareceu nas temporadas</th>
+            <td>{{item.appearance}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Interpretado por</th>
+            <td>{{item.portrayed}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+<a [routerLink] = "['/home']"> Voltar</a>
+</div>

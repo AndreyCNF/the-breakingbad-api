@@ -1,0 +1,24 @@
+
+
+h1 {
+    color: white;
+    margin-bottom: 4rem;
+}
+.img-detail {
+    width: 25rem;
+    height: 35rem;
+    border: 2px solid black ;
+    box-shadow: 0px 0px 1px 1px black;
+}
+
+.container-detail {
+    margin-top: 5rem;
+}
+.table-detail {
+    width: 42rem;
+    
+
+}
+.table-detail tr {
+    color: white;
+}

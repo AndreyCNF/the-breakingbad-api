@@ -27,10 +27,12 @@ h3 {
 }
 .card {
     width: 18rem;
-    background-color:#093009;
-    border: 3px solid black;
+    
+    box-sizing: 0px 0px 3px 3px black;
 }
-
+.card-body, .card-text, .card-name, .card {
+    background-color: black;
+}
 .card-img-top {
     height: 18rem;
 }
