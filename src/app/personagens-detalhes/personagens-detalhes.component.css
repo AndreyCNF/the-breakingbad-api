@@ -3,6 +3,7 @@
 h1 {
     color: white;
     margin-bottom: 4rem;
+    width: 20rem;
 }
 .img-detail {
     width: 25rem;
@@ -21,4 +22,8 @@ padding-top: 5rem;
 }
 .table-detail tr {
     color: white;
+}
+.botao-voltar {
+    width: 30rem;
+    margin-top: 2rem;
 }

@@ -5,8 +5,8 @@
         <img [src]="item.img" alt="item.name" class="rounded  img-detail" >
     </div>
     <table class="table table-detail">
-        <thead><h1>{{item.name}}</h1></thead>
         <tbody>
+          <h1>{{item.name}}</h1>
             <tr>
                 <th scope="row">Apelido</th>
                 <td>{{item.nickname}}</td>
@@ -33,6 +33,7 @@
           </tr>
         </tbody>
       </table>
+      <a [routerLink] = "['/home']" class="botao-voltar btn btn-dark" type="button"> Voltar</a>
 </div>
-<a [routerLink] = "['/home']"> Voltar</a>
+
 </div>
