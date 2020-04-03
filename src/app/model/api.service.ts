@@ -1,13 +1,11 @@
 
 import { Injectable } from '@angular/core';
 import { Observable, of, throwError } from 'rxjs';
-import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { catchError, tap, map } from 'rxjs/operators';
 import { Personagens } from './Personagens';
 
-const httpOptions = {
-  headers: new HttpHeaders({'Content-Type': 'application/json'})
-}
+
 const API_URL = 'https://www.breakingbadapi.com/api/characters'
 
 @Injectable({
